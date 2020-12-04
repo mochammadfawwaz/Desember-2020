@@ -7,7 +7,7 @@ void setup()
 {
   Serial.begin(9600);
   delay(100);
-  Serial.println("cimpleo pH Sense");
+  Serial.println("pH Sense");
 }
 
 float ph(float voltage){
@@ -19,10 +19,9 @@ void loop(){
   for (int i = 0; i < samples; i++)
   {
     measurings += analogRead(pHSense);
-    delay(10);
+    delay(3000);
   }
     float voltage = 5 / adc_resolution * measurings/samples;
-    Serial.print("pH= ");
     Serial.println(ph(voltage));
-    delay(800);
+    delay(3000);
 }
