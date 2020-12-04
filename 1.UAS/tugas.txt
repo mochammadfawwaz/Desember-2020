@@ -1,1 +1,2 @@
 1. membuat penerimaan database firebase
+2. pengurusan backend android!
